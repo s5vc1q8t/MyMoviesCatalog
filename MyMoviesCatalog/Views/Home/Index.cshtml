@@ -1,0 +1,13 @@
+﻿@model IEnumerable<MyMoviesCatalog.ViewModels.MovieViewModel>
+
+@{
+    ViewData["Title"] = "Movies";
+}
+
+@foreach (var movie in Model)
+{
+    <h1>@movie.Title</h1>
+    <p>@movie.Producer</p>
+    <p>@movie.Rating</p>
+    <p>@movie.Styles</p>
+}
